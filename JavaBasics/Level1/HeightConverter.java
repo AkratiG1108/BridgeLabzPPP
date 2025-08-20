@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class HeightConverter {
      public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        try(Scanner input = new Scanner(System.in)){
 
         System.out.print("Enter height in cm: ");
         double cm = input.nextDouble();
@@ -14,5 +14,5 @@ public class HeightConverter {
         double remainingInches = inches % 12;
 
         System.out.println("Your Height in cm is " + cm + " while in feet is " + feet + " and inches is " + remainingInches);
-    }
+    }}
 }

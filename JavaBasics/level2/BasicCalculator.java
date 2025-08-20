@@ -5,7 +5,7 @@ public class BasicCalculator {
 
     public static void main(String[] args) {
         // Create Scanner object for user input
-        Scanner sc = new Scanner(System.in);
+        try(Scanner sc = new Scanner(System.in)){
         
         // Take user input
         System.out.print("Enter first number: ");
@@ -29,5 +29,5 @@ public class BasicCalculator {
         System.out.println("Multiplication = " + multiplication);
         System.out.println("Division       = " + division);
         
-    }
+    }}
 }

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class DiscountProgram {
      public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        try(Scanner input = new Scanner(System.in)){
 
         System.out.print("Enter course fee: ");
         double fee = input.nextDouble();
@@ -16,6 +16,6 @@ public class DiscountProgram {
         double finalFee = fee - discount;
 
         System.out.println("The discount amount is INR " + discount + " and final discounted fee is INR " + finalFee);
-    }
+    }}
     
 }

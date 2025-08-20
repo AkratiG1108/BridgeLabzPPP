@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class YardsToMiles {
      public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+       try( Scanner input = new Scanner(System.in)){
 
         System.out.print("Enter distance in feet: ");
         double feet = input.nextDouble();
@@ -13,5 +13,5 @@ public class YardsToMiles {
         double miles = yards / 1760;
 
         System.out.println("The distance is " + feet + " feet which is " + yards + " yards and " + miles + " miles");
-    }
+    }}
 }

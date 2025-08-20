@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class BasicCalculator {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+       try( Scanner input = new Scanner(System.in)){
 
         System.out.print("Enter first number: ");
         double number1 = input.nextDouble();
@@ -19,5 +19,5 @@ public class BasicCalculator {
 
         System.out.println("The addition, subtraction, multiplication and division value of 2 numbers "
                 + number1 + " and " + number2 + " is " + sum + ", " + diff + ", " + product + ", and " + division);
-    }
+    }}
 }
