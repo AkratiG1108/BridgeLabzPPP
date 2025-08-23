@@ -1,4 +1,4 @@
-package BridgeLabz.ControlFlowPractices.Level2;
+package controlFlowLevel2;
 
 import java.util.Scanner;
 
